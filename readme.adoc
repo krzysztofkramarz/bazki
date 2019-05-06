@@ -1,0 +1,11 @@
+= Bazki
+
+Tematy bazodanowe rozmaite. 
+
+JDBC
+JDBCTemplate
+JOOQ
+Hibernate jako oryginał dla JPA
+itp.
+
+Zrób `git branch -a` by wiedzieć co tu masz
