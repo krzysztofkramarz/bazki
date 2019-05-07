@@ -9,8 +9,7 @@ CREATE TABLE ZAJECIA(
 INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
 ('Podstawy Baz Danych', 'ćwiczenia, laboratorium', 14, 'Piotr Piotrowski','GR1', 'Jan Nowak');
 INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
-('Podstawy języka Java', 'laboratorium, ćwiczenia', 14, 'Piotr Piotrowski','GR1'
-'Jan Kowalski');
+('Podstawy języka Java', 'laboratorium, ćwiczenia', 14, 'Piotr Piotrowski','GR1','Jan Kowalski');
 INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
 ('Analiza Matematyczna', 'wykład', 3, 'Gabriel Gabrowski', 'GR2', 'Barbara Borowska');
 INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
