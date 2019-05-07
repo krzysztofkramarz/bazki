@@ -3,13 +3,15 @@ CREATE TABLE ZAJECIA(
     RODZAJ VARCHAR (255) NOT NULL,
     NRSTUDENTA INT NOT NULL,
     STUDENT VARCHAR (255) NOT NULL,
+    GRUPASTUDENTA VARCHAR (255) NOT NULL,
     WYKLADOWCA VARCHAR (255)
 );
-INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, WYKLADOWCA) VALUES
-('Podstawy Baz Danych', 'ćwiczenia, laboratorium', 14, 'Piotr Piotrowski', 'Jan Nowak');
-INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, WYKLADOWCA) VALUES
-('Podstawy języka Java', 'laboratorium, ćwiczenia', 14, 'Piotr Piotrowski',
+INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
+('Podstawy Baz Danych', 'ćwiczenia, laboratorium', 14, 'Piotr Piotrowski','GR1', 'Jan Nowak');
+INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
+('Podstawy języka Java', 'laboratorium, ćwiczenia', 14, 'Piotr Piotrowski','GR1'
 'Jan Kowalski');
-INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, WYKLADOWCA) VALUES
-('Analiza Matematyczna', 'wykład', 3, 'Garbriel Gabrowski', 'Barbara Borowska');
-
+INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
+('Analiza Matematyczna', 'wykład', 3, 'Gabriel Gabrowski', 'GR2', 'Barbara Borowska');
+INSERT INTO ZAJECIA (NAZWA, RODZAJ, NRSTUDENTA, STUDENT, GRUPASTUDENTA, WYKLADOWCA) VALUES
+('Obiektowe Bazy Danych', 'ćwiczenia, laboratorium', 3, 'Gabriel Garbrowski', 'GR2', 'Marta Bobrowska');
