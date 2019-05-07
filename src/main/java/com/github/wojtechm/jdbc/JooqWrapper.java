@@ -27,7 +27,7 @@ class JooqWrapper {
         resetTablePokemon();
         addSomePokemon();
         printAllPokemon();
-        Pokemon pokemon = getPokemonWithId(3);
+        Pokemon pokemon = getPokemonWithId(6);
         pokemon.type = "Poison, but name is really long so you are guaranteed to notice the change";
         update(pokemon);
         printAllPokemon();
