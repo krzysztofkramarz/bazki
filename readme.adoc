@@ -1,11 +1,39 @@
-= Bazki
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= Proste rozwiązania
 
-Tematy bazodanowe rozmaite. 
+W tym repozytorium będziesz mieć okazję zobaczyć przykładowe użycie technologii:
 
-JDBC
-JDBCTemplate
-JOOQ
-Hibernate jako oryginał dla JPA
-itp.
+ * jOOQ
+ * Spring JDBC Template
 
-Zrób `git branch -a` by wiedzieć co tu masz
+=== Jak pracować z tym repozytorium?
+==== Przykład - pakiet `jdbc`
+Na początku odwiedź proszę pakiet `jdbc`. Znajdziesz w nim przykładowe użycie wspomnianych technologii, oraz
+plik `package-info` w którym znajdziesz sugestie jak się poruszać po pakiecie.
+
+==== Warsztaty - twoja własna implementacja
+Ktoś mądry kiedyś napisał, że:
+====
+Bez powtórki to lipa, a nie nauka.
+
+~Ja (Makieła Wojciech) przed chwilą.
+====
+W duch tej myśli czas na powtórkę. W pakiecie `warsztat` znajdziesz kod bardzo podobny
+do tego w pakiecie `jdbc`, więc o ile nie przeskoczyłeś/aś pierwszego kroku, to
+odnalezienie się w tym pakiecie będzie błachostką.
+
+...
+
+Ale co jest do zrobienia?
+
+Podobnie jak w przykładzie z pokemonami podstawowe operacje dodawania, wyciągania oraz aktualizacji,
+całość okroszona tworzeniem i czyszczeniem tabeli.
+
+W klasach `JdbcTemplateWrapper` oraz `JooqWrapper` znajdziesz zestaw metod do zaimplementowania. Metodki mają bardzo
+wymowne nazwy, więc nie powinieneś/powinnaś mieć problemów z zgadnięciem o co chodzi.
