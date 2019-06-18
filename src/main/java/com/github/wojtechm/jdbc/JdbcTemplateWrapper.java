@@ -1,5 +1,6 @@
 package com.github.wojtechm.jdbc;
 
+import com.github.wojtechm.DataSourceConfig;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 

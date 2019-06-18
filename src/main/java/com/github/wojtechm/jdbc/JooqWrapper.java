@@ -1,5 +1,6 @@
 package com.github.wojtechm.jdbc;
 
+import com.github.wojtechm.DataSourceConfig;
 import org.jooq.DSLContext;
 import org.jooq.Record3;
 import org.jooq.Result;

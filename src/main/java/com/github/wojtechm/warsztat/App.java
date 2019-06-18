@@ -1,4 +1,4 @@
-package com.github.wojtechm.jdbc;
+package com.github.wojtechm.warsztat;
 
 import com.github.wojtechm.DataSourceConfig;
 import org.springframework.boot.CommandLineRunner;
@@ -19,9 +19,10 @@ class App implements CommandLineRunner {
     public void run(String... strings) throws Exception {
         DataSourceConfig config = new DataSourceConfig();
         JdbcTemplateWrapper jdbcTemplate = new JdbcTemplateWrapper(config);
-        jdbcTemplate.playWithPokemon();
+        jdbcTemplate.róbRzeczyZIde();
 
         JooqWrapper jooq = new JooqWrapper(config);
-        jooq.playWithPokemon();
+        jooq.róbRzeczyZIde();
+
     }
 }
