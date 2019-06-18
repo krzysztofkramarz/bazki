@@ -8,6 +8,7 @@ import java.util.List;
 class IntegratedDevelopmentEnvironment {
 
     long id;
+    String nazwa;
     String licencja;
     boolean czyNapisanyWJavie;
     boolean czyWspieraLinux;
