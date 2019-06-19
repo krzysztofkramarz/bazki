@@ -1,5 +1,6 @@
 package com.github.wojtechm;
 
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 /**
