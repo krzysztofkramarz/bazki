@@ -1,0 +1,52 @@
+DROP TABLE IF EXISTS CLIENTS;
+CREATE TABLE CLIENTS
+(
+ID int primary key not null,
+FullName VARCHAR(255) NOT NULL, 
+Adress VARCHAR(255) NOT NULL, 
+Movies_Rented TEXT NOT NULL, 
+Salutation VARCHAR(255) NOT NULL, 
+Category TEXT NOT NULL
+);
+
+INSERT INTO CLIENTS VALUES(1,'Krzychu Graba', 'Zapolska 110 31-355 Kraków', 'Lord Of The Rings Return of the King, Star Wars A New Hope', 'Mr.', 'Fantasy, Sci-fi');
+INSERT INTO CLIENTS VALUES(2,'Bartek Wukabepe', 'Bazodanowa 112 31-355 Kraków', 'Star Wars Phantom Manace', 'Mr.', 'Sci-fi');
+
+INSERT INTO CLIENTS VALUES(3,'Krzychu Graba', 'Zapolska 110 31-355 Kraków', 'Lord Of The Rings Return of the King', 'Mr.', 'Fantasy, Sci-fi');
+
+UPDATE CLIENTS SET MOVIES_RENTED = 'Star Wars A New Hope' where ID = 1;
+UPDATE CLIENTS SET CATEGORY  = 'Fantasy' where ID = 3;
+UPDATE CLIENTS SET CATEGORY  = 'Sci-Fi' where ID = 1;
+
+DROP TABLE IF EXISTS MOVIES;
+
+CREATE TABLE MOVIES (
+ID int primary key not null,
+TITLE VARCHAR(255) NOT NULL, 
+CATEGORY VARCHAR(255) NOT NULL, 
+);
+insert into MOVIES values (1,'Star Wars A New Hope', 'Sci-Fi');
+insert into MOVIES values (2,'Star Wars Phantom Manace', 'Fantasy');
+insert into MOVIES values (3,'Lord Of The Rings Return of the King', 'Fantasy');
+
+ALTER TABLE CLIENTS DROP COLUMN CATEGORY;
+UPDATE CLIENTS SET MOVIES_RENTED = '1' WHERE ID = 1;
+UPDATE CLIENTS SET MOVIES_RENTED = '2' WHERE ID = 2;
+UPDATE CLIENTS SET MOVIES_RENTED = '3' WHERE ID = 3;
+ALTER TABLE CLIENTS ALTER COLUMN MOVIES_RENTED int;
+
+
+ALTER TABLE CLIENTS 
+ADD CONSTRAINT FK_MOVIES
+FOREIGN KEY (ID) REFERENCES MOVIES(ID);
+
+
+select * from CLIENTS;
+SELECT * FROM MOVIES;
+
+SELECT CLIENTS.FULLNAME, MOVIES.TITLE 
+FROM CLIENTS
+ JOIN MOVIES ON CLIENTS.MOVIES_RENTED = MOVIES.ID;
+
+SELECT * FROM CLIENTS;
+DELETE  FROM MOVIES WHERE ID = 1;
